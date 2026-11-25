@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #090404;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    line-height: 1.6;
+    background-image: url(nonagram.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nome_logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    column-gap: 15px;
+    line-height: 1.3;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    grid-row: span 2;
+}
+
+.titulo {
+    grid-row: span 2;
+}
+
+.nome-site {
+    align-self: end;
+    color: red;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.texto-debaixo-do-titulo {
+    align-self: start;
+    font-size: small;
+    color: #5b2020;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 900;
+}
+
+.about, .curriculum {
+    color: red;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    transition: all 0.1s ease-in-out;
+}
+
+.about:hover, .curriculum:hover {
+    background-color: #150a0a;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.contacts, .botao {
+    color: black;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    transition: all 0.1s ease-in-out;
+}
+
+.contacts:hover, .botao:hover {
+    background-color: #8b0000;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.contacts:active, .botao:active {
+    background-color: #5b2020;
+}
+
+body {
+    background-image: url(background_image.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #00000080;
+}
+
+.conteudo {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 2px solid red;
+}
+
+header .conteudo {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    color: red;
+    background-color: #000000c9;
+}
+
+.apresentacao div {
+    margin: 25px;
+}
+
+.apresentacao h1 {
+    font-size: 40px;
+}
+
+.etiqueta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 45px;
+    color: #5b2020;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 15px;
+    font-weight: 900;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    font-weight: 900;
+    margin-left: 100px;
+}
+
+.botao:hover {
+    margin-left: 98px;
+    width: 184px;
+}
+
+.fotografia {
+    width: 250px;
+    height: 250px;
+    margin-right: 50px;
+}
+
+.secao {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding: 50px;
+    background-color: #150a0a;
+    border-radius: 25px;
+    scroll-margin-top: 100px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 22px;
+    color: red;
+}
+
+h4 {
+    color: red;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.item-cv {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.item-cv p {
+    margin-top: 0;
+}
+
+.data {
+    min-width: 150px;
+    margin-right: 25px;
+    font-size: small;
+    font-weight: 900;
+    color: #5b2020;
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background-color: black;
+    border-top: 2px solid red;
+}
+
+footer a {
+    color: red;
+}
+
+footer a:hover {
+    color: #ff3838;
+}
+
+.nota {
+    margin-top: 45px;
+    font-size: small;
+    color: #5b2020;
+}
+
+@media (max-width: 1300px) {
+    .conteudo {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        position: static;
+    }
+
+    .topo, .apresentacao, .item-cv {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .conteudo {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .apresentacao {
+        margin-top: 0;
+    }
+
+    .fotografia {
+        order: -1;
+        width: 200px;
+        height: 200px;
+        margin-top: 25px;
+        margin-right: 0;
+    }
+
+    .secao {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+}
